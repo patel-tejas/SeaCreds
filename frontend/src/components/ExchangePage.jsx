@@ -224,7 +224,7 @@ export default function ExchangePage() {
                                 <p className="text-5xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent font-['Orbitron']">
                                     {balanceValue}
                                 </p>
-                                <p className="text-sm text-cyan-400/80 mt-1 font-['Exo']">GHC TOKENS</p>
+                                <p className="text-sm text-cyan-400/80 mt-1 font-['Exo']">BCC TOKENS</p>
                             </div>
                             <button
                                 onClick={handleRefresh}

@@ -343,7 +343,6 @@ export default function LandingPage() {
         }
       `}</style>
       
-      <CustomCursor>
         <main ref={mainContainerRef} className="w-full">
           <Navbar />
           
@@ -556,7 +555,6 @@ export default function LandingPage() {
             </div>
           </footer>
         </main>
-      </CustomCursor>
     </>
   );
 }
