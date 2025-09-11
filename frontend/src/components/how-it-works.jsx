@@ -1,8 +1,33 @@
 import React from "react";
+// import processimg from "../../public/flowdiagram.png"; 
+// import introvideo from "../../public/Blue_Carbon_Blockchain_Workflow_Explained.mp4";
 
 export default function HowItWorks() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#0c1120] to-[#0a0a0a] text-white py-16 px-4">
+      {/* Hero Video Section */}
+      <div className="max-w-6xl mx-auto mb-20">
+        <div className="bg-black/30 rounded-2xl border border-cyan-500/20 overflow-hidden">
+          <video
+            src="../../public/Blue_Carbon_Blockchain_Workflow_Explained.mp4" // Update this path to your video
+            className="w-full h-[400px] md:h-[500px] object-cover"
+            autoPlay
+            playsInline
+            muted
+            loop
+            
+
+          />
+          <div className="p-8">
+            <h2 className="text-3xl font-bold mb-4 font-['Orbitron']">SeaCreds in Action</h2>
+            <p className="text-cyan-200 font-['Exo']">
+              Watch how our platform transforms blue carbon conservation through blockchain technology, 
+              creating a transparent ecosystem that benefits both the environment and coastal communities.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Header Section */}
       <div className="max-w-6xl mx-auto text-center mb-16">
         <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent font-['Orbitron']">
@@ -11,6 +36,24 @@ export default function HowItWorks() {
         <p className="text-xl text-cyan-200 max-w-3xl mx-auto font-['Exo']">
           A complete guide to our blockchain-powered blue carbon credit ecosystem that brings transparency, trust, and fair compensation to coastal conservation.
         </p>
+      </div>
+
+      {/* Process Flow Diagram Section */}
+      <div className="max-w-6xl mx-auto mb-20">
+        <h2 className="text-3xl font-bold text-center mb-12 font-['Orbitron']">Our Process Flow</h2>
+        <div className="bg-black/30 p-8 rounded-2xl border border-cyan-500/20">
+          <img 
+            src="../../public/flowdiagram.png"  // Update this path to your process flow image
+            alt="SeaCreds Process Flow Diagram"
+            className="w-full rounded-xl"
+          />
+          <div className="mt-6 text-center">
+            <p className="text-cyan-200 font-['Exo']">
+              This diagram illustrates the complete SeaCreds workflow from project initiation to credit transfers, 
+              showcasing our transparent and efficient blockchain-based approach to blue carbon credit management.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Overview Section */}
@@ -32,8 +75,8 @@ export default function HowItWorks() {
                 <div className="text-sm text-cyan-200 font-['Exo']">Transparent</div>
               </div>
               <div className="text-center p-6 bg-cyan-900/20 rounded-xl border border-cyan-500/20">
-                <div className="text-3xl font-bold text-cyan-400 mb-2 font-['Orbitron']">70%</div>
-                <div className="text-sm text-cyan-200 font-['Exo']">Cost Reduction</div>
+                <div className="text-3xl font-bold text-cyan-400 mb-2 font-['Orbitron']">100%</div>
+                <div className="text-sm text-cyan-200 font-['Exo']">No Tampering & Bullet Proof</div>
               </div>
               <div className="text-center p-6 bg-cyan-900/20 rounded-xl border border-cyan-500/20">
                 <div className="text-3xl font-bold text-cyan-400 mb-2 font-['Orbitron']">24/7</div>
@@ -86,7 +129,7 @@ export default function HowItWorks() {
 
       {/* Process Flow Section */}
       <div className="max-w-6xl mx-auto mb-20">
-        <h2 className="text-3xl font-bold text-center mb-16 font-['Orbitron']">The SeaCreds Process Flow</h2>
+        {/* <h2 className="text-3xl font-bold text-center mb-16 font-['Orbitron']">The SeaCreds Process Flow</h2> */}
         
         <div className="relative">
           {/* Timeline line */}

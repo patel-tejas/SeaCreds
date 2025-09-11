@@ -6,10 +6,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '/', current: true },
-    { name: 'About', href: '/about', current: false },
     { name: 'How It Works', href: '/how-it-works', current: false },
-    { name: 'Marketplace', href: '/exchange', current: false },
-    { name: 'Contact', href: '#contact', current: false },
   ];
 
   return (
